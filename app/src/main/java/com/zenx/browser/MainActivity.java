@@ -85,6 +85,7 @@ import com.zenx.browser.history.HistoryActivity;
 import com.zenx.browser.suggestions.SuggestionsAdapter;
 import com.zenx.browser.ui.SearchBarController;
 import com.zenx.browser.ui.UrlBarController;
+import com.zenx.browser.utils.AdBlocker;
 import com.zenx.browser.utils.IntentUtils;
 import com.zenx.browser.utils.PrefsUtils;
 import com.zenx.browser.utils.TabUtils;
@@ -248,6 +249,8 @@ public class MainActivity extends WebViewExtActivity implements
         mWebView.init(this, urlBarController, mLoadingProgress, mIncognito);
         mWebView.setDesktopMode(desktopMode);
         mWebView.loadUrl(url == null ? PrefsUtils.getHomePage(this) : url);
+
+        AdBlocker.init(this);
 
         mHasThemeColorSupport = WebViewCompat.isThemeColorSupported(mWebView);
 
