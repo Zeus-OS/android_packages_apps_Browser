@@ -16,10 +16,11 @@
 
 package com.zenx.browser.suggestions;
 
-import androidx.annotation.NonNull;
-import androidx.annotation.Nullable;
 import android.text.TextUtils;
 import android.util.Log;
+
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
 
 import org.json.JSONArray;
 import com.zenx.browser.utils.FileUtils;
