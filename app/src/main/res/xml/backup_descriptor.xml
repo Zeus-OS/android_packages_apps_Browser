@@ -17,7 +17,7 @@
     <!-- Shared preferences -->
     <include
         domain="sharedpref"
-        path="com.zenx.browser_preferences.xml" />
+        path="com.zeus.browser_preferences.xml" />
 
     <!-- Databases -->
     <include

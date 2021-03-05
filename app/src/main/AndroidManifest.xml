@@ -14,7 +14,7 @@
      limitations under the License.
 -->
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.zenx.browser">
+    package="com.zeus.browser">
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
@@ -35,7 +35,7 @@
         android:theme="@style/AppTheme">
 
         <activity
-            android:name="com.zenx.browser.MainActivity"
+            android:name="com.zeus.browser.MainActivity"
             android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize"
             android:documentLaunchMode="always"
             android:hardwareAccelerated="true"
@@ -76,23 +76,23 @@
         </activity>
 
         <activity
-            android:name="com.zenx.browser.history.HistoryActivity"
+            android:name="com.zeus.browser.history.HistoryActivity"
             android:label="@string/history_title"
             android:theme="@style/AppTheme.NoActionBar" />
 
         <activity
-            android:name="com.zenx.browser.favorite.FavoriteActivity"
+            android:name="com.zeus.browser.favorite.FavoriteActivity"
             android:label="@string/favorite_title"
             android:theme="@style/AppTheme.NoActionBar" />
 
         <activity
-            android:name="com.zenx.browser.SettingsActivity"
+            android:name="com.zeus.browser.SettingsActivity"
             android:label="@string/settings_title"
             android:theme="@style/AppTheme.NoActionBar" />
 
         <provider
             android:name="androidx.core.content.FileProvider"
-            android:authorities="com.zenx.browser.fileprovider"
+            android:authorities="com.zeus.browser.fileprovider"
             android:exported="false"
             android:grantUriPermissions="true">
             <meta-data
@@ -102,12 +102,12 @@
 
         <provider
             android:name=".favorite.FavoriteProvider"
-            android:authorities="com.zenx.browser.favorite"
+            android:authorities="com.zeus.browser.favorite"
             android:exported="false" />
 
         <provider
             android:name=".history.HistoryProvider"
-            android:authorities="com.zenx.browser.history"
+            android:authorities="com.zeus.browser.history"
             android:exported="false" />
 
         <meta-data

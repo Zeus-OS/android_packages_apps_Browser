@@ -25,9 +25,9 @@
         android:background="?colorPrimary" />
 
     <fragment
-        android:name="com.zenx.browser.SettingsActivity$MyPreferenceFragment"
+        android:name="com.zeus.browser.SettingsActivity$MyPreferenceFragment"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/toolbar"
-        android:tag="com.zenx.browser.SettingsActivity$MyPreferenceFragment" />
+        android:tag="com.zeus.browser.SettingsActivity$MyPreferenceFragment" />
 </RelativeLayout>

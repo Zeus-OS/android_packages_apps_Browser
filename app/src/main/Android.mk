@@ -21,7 +21,7 @@ LOCAL_RESOURCE_DIR := $(LOCAL_PATH)/res
 
 LOCAL_SRC_FILES := \
     $(call all-java-files-under, java) \
-    $(call all-java-files-under, java_zenx)
+    $(call all-java-files-under, java_zeus)
 
 LOCAL_USE_AAPT2 := true
 
